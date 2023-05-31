@@ -2,35 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
-        integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=='
-        crossorigin='anonymous' />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css'
-        integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=='
-        crossorigin='anonymous' />
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+        integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Giochini</title>
 </head>
 
 <body>
     <!-- Giochino con i dadi -->
     <div class="card text-center">
-        <div class="card-header h1">
-            Gioco dei dadi
-        </div>
+        <div class="card-header h1">Gioco dei dadi</div>
         <div class="card-body">
             <h5 class="card-title">Daje che vinci!</h5>
             <p id="result" class="card-text"></p>
-            <button id="diceButton" class="btn btn-primary">Clicca e tenta la fortuna</button>
+            <button id="diceButton" class="btn btn-primary">
+                Clicca e tenta la fortuna
+            </button>
         </div>
         <div class="card-footer text-muted">
             Ma quale fortuna! Vince sempre il pc!
         </div>
     </div>
-
+    <!-- Esercizio della mail  -->
+    <div class="form-group text-center mt-5">
+        <label for="mailInput">Insert your email address here</label>
+        <input type="email" class="form-control w-25 text-center mx-auto" id="mailInput" placeholder="Enter mail">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.
+            (maybe)</small>
+        <button type="submit" id="mailButton" class="btn btn-primary d-block mx-auto">Submit</button>
+    </div>
+    <h1 id="login-result" class="text-center mt-5"></h1>
+    <p class="text-center">Ho scelto volutamente di non levare la mail dall'input dopo aver cliccato il button, a linea
+        41 di JS spiego il motivo :)</p>
     <script src="js/script.js"></script>
     <script src="js/mail.js"></script>
 </body>
